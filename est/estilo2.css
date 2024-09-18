@@ -1,0 +1,89 @@
+.contenedor/*padre*/
+{
+    background-color: rgb(3, 3, 79);
+    padding: 10px;
+    font-size: 25px;
+    text-align: center ;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 10fr 2fr 1fr ;
+    grid-template-areas: "cabecera  cabecera cabecera"
+                         "menu      menu      menu"
+                         "contenido contenido publi"
+                         "pie       pie         pie"  ;
+    
+}
+.contenedor>div
+{
+    background-color: rgb(161, 179, 143);
+}
+.contenedor .cabecera
+{
+    background-color: rgb(118, 206, 147);
+    grid-column: cabecera;
+}
+.contenedor .menu
+{
+    background-color: rgb(119, 194, 107);
+    grid-column: menu;
+}
+.contenedor .contenido
+{
+    background-color: rgb(209, 227, 246);
+    grid-column: contenido;
+    padding: 30px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: "contenido contenido "
+                         "tex1       tex2"
+                                              ;
+}
+.contenedor .publi
+{
+    background-color: rgb(29, 149, 189);
+    grid-column: publi;
+    padding: 20px;
+    
+    display: grid;
+    grid-gap: 10px;
+    
+
+}
+.contenedor .pie
+{
+    background-color: rgb(147, 197, 237);
+    grid-column: pie;
+}
+.contenedor .contenido .tex1
+{
+    background-color: rgb(34, 145, 196);
+    grid-column: tex1;
+    
+}
+.contenedor .contenido .tex2
+{
+    background-color: rgb(10, 107, 160);
+    grid-column: tex2;
+}
+.publi .not1
+{
+    background-color: rgb(13, 31, 162);
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 6fr -1fr ;
+    grid-template-rows: 5fr 1fr ;
+}
+.publi .not2
+{
+    background-color: rgb(6, 54, 102);
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 3fr 2fr  ;
+    grid-template-rows: 5fr 1fr  ;
+    
+}
